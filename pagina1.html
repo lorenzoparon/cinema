@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film</title>
+    <link rel="icon" type="image/png" href="img/popcorn.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+    <a class="logo" href="index.html">Il mondo dello Spettacolo</a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a class="active" href="pagina1.html">Film</a>
+        <a href="pagina2.html">Recensioni</a>
+    </nav>
+</header>
+
+<main class="main-pagine">
+    <section class="heading-pagine" style="max-width: 720px; padding-bottom: 55px;">
+        <p class="sottotitolo">FILM</p>
+        <h1 style="font-size: 60px;">Una selezione<br>da guardare.</h1>
+        <p>Scegli un genere per filtrare i titoli.</p>
+    </section>
+
+    <div class="filtri">
+        <button class="filtro active" data-filtro="all">Tutti</button>
+        <button class="filtro" data-filtro="scifi">Fantascienza</button>
+        <button class="filtro" data-filtro="thriller">Thriller</button>
+        <button class="filtro" data-filtro="drama">Drama</button>
+    </div>
+
+    <section class="film-grid">
+        <article class="film-card" data-genre="scifi">
+            <img src="img/matrix.jpg" alt="Locandina di fantascienza">
+            <div class="film-info">
+                <span>FANTASCIENZA</span>
+                <h2>The Matrix</h2>
+                <p>Un viaggio tra realtà, tecnologia e identità.</p>
+            </div>
+        </article>
+        <article class="film-card" data-genre="thriller">
+            <img src="img/tenet.jpg" alt="Locandina thriller">
+            <div class="film-info">
+                <span>THRILLER</span>
+                <h2>Tenet</h2>
+                <p>Mistero, azione e una sfida contro il tempo.</p>
+            </div>
+        </article>
+        <article class="film-card" data-genre="drama">
+            <img src="img/lalaland.jpg" alt="Locandina drama">
+            <div class="film-info">
+                <span>DRAMA</span>
+                <h2>La La Land</h2>
+                <p>Musica, ambizione e scelte che cambiano una vita.</p>
+            </div>
+        </article>
+        <article class="film-card" data-genre="thriller">
+            <img src="img/shutterisland.jpg" alt="Locandina thriller">
+            <div class="film-info">
+                <span>THRILLER</span>
+                <h2>Shutter Island</h2>
+                <p>Un'isola misteriosa dove nulla è davvero come sembra.</p>
+            </div>
+        </article>
+        <article class="film-card" data-genre="drama">
+            <img src="https://images.unsplash.com/photo-1594744958180-031595db6969?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Locandina drama">
+            <div class="film-info">
+                <span>DRAMA</span>
+                <h2>Joker</h2>
+                <p>Una storia intensa tra solitudine, identità e cambiamento.</p>
+            </div>
+        </article>
+        <article class="film-card" data-genre="scifi">
+            <img src="img/bladerunner.jpg" alt="Locandina di fantascienza">
+            <div class="film-info">
+                <span>FANTASCIENZA</span>
+                <h2>Blade Runner 2049</h2>
+                <p>Un futuro sospeso tra memoria, tecnologia e umanità.</p>
+            </div>
+        </article>
+    </section>
+</main>
+<div id="privacy-banner">
+    <p>Questo sito utilizza solo strumenti essenziali per offrire una migliore esperienza di navigazione.</p>
+    <button id="privacy-accept">OK</button>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
